@@ -6,6 +6,17 @@ public class FoodDetailsResponse {
 	private String foodName;
 	private float foodPrice;
 	private String foodCategory;
+	public FoodDetailsResponse() {
+
+	}
+
+
+	public FoodDetailsResponse(String foodId, String foodName, float foodPrice, String foodCategory) {
+		this.foodId = foodId;
+		this.foodName = foodName;
+		this.foodPrice = foodPrice;
+		this.foodCategory = foodCategory;
+	}
 
 	public String getFoodId() {
 		return foodId;
